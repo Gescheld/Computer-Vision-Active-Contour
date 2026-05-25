@@ -1,5 +1,7 @@
 # Active Contour Segmentation (Snake Algorithm)
 
+![CI](https://github.com/Gescheld/Computer-Vision-Active-Contour/actions/workflows/ci.yml/badge.svg)
+
 > Personal university project — classical computer vision for object segmentation using active contours.
 
 **Status:** Completed (2023) · Personal learning project  
@@ -34,11 +36,18 @@ The approach minimizes three energy terms:
 ```bash
 git clone https://github.com/Gescheld/Computer-Vision-Active-Contour.git
 cd Computer-Vision-Active-Contour
-pip install jupyter numpy matplotlib  # plus deps from notebook
+pip install -r requirements.txt jupyter
 jupyter notebook "Computer Vision - Snake-final.ipynb"
 ```
 
 Run all cells. Alternatively, open the notebook in [Google Colab](https://colab.research.google.com/) and upload the image files.
+
+**CI smoke test** (3 snake rounds, no plots):
+
+```bash
+pip install -r requirements.txt
+python scripts/smoke_test.py
+```
 
 ## Results
 
